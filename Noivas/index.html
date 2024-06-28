@@ -12,6 +12,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Playwrite+ES+Deco:wght@100..400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Trad:wght@100..400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Adamina&display=swap" rel="stylesheet">
+
   <link rel="icon" href="./img/Favicon.png" type="image/x-icon">
 </head>
 
@@ -52,6 +54,12 @@
   }
 
 
+  .adamina-regular {
+    font-family: "Adamina", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
 
 
   ::-webkit-scrollbar {
@@ -66,6 +74,33 @@
 
   ::-webkit-scrollbar-track {
     background: #f1f1f1;
+  }
+
+  .btnEnviar:hover {
+    color: black;
+  }
+
+  .Titulo {
+    font-size: 30pt;
+    margin-top: -40rem;
+  }
+
+  @media (max-width: 1200px) {
+    .Titulo {
+      font-size: 35pt;
+      margin-top: 3rem;
+    }
+
+    .MarginMobile {
+      margin-top: -40rem;
+    }
+  }
+
+  @media (max-width: 680px) {
+    .Titulo {
+      font-size: 20pt;
+      margin-top: 3rem;
+    }
   }
 </style>
 
@@ -100,8 +135,7 @@
             <a href="#scrollspyHeading2" class="text-decoration-none text-secondary varela-round-regular">VESTIDOS</a>
             <a href="#scrollspyHeading1"
               class="text-decoration-none text-secondary varela-round-regular">AGENDAMENTO</a>
-            <a href="#scrollspyHeading3" class="text-decoration-none text-secondary varela-round-regular">SOBRE</a>
-            <a href="#scrollspyHeading4" class="text-decoration-none text-secondary varela-round-regular">OBJETIVO</a>
+            <a href="#scrollspyHeading3" class="text-decoration-none text-secondary varela-round-regular">RENDA</a>
 
           </div>
 
@@ -143,7 +177,7 @@
           </div>
         </div>
 
-        <div class="col-12 collapse" id="collapseExample">
+        <div class="col-12 collapse " id="collapseExample">
           <div class="bg-dark p-0 d-flex border-5 border-top-0 card-body">
 
             <div class="col p-0 bg-primary">
@@ -157,14 +191,12 @@
                 <a href="#scrollspyHeading1" onclick="closeCollapse()"
                   class="text-decoration-none text-secondary varela-round-regular">AGENDAMENTO</a>
                 <a href="#scrollspyHeading3" onclick="closeCollapse()"
-                  class="text-decoration-none text-secondary varela-round-regular">SOBRE</a>
-                <a href="#scrollspyHeading4" onclick="closeCollapse()"
-                  class="text-decoration-none text-secondary varela-round-regular">OBJETIVO</a>
-
+                  class="text-decoration-none text-secondary varela-round-regular">RENDA</a>
               </div>
 
               <div class="col p-0">
-                <div class="d-flex justify-content-center bg-light align-items-center p-2">
+                <div
+                  class="d-flex justify-content-center bg-light align-items-center p-2 border-2 border-dark border-bottom">
 
                   <a class="btn border-0 rounded-circle" style="color: black;">
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
@@ -215,23 +247,46 @@
       <div class="col-12 bg-dark p-0 d-flex flex-column flex-xl-row" style="margin-top: 10vh;" id="scrollspyHeading5">
 
         <div class="col bg-light p-3 justify-content-center d-flex flex-column">
-          <p class=" p-3 text-center playwrite-mx-Titulo3 text-secondary" style="font-size: 40pt;">PARA UM
-            SONHO UNICO UM VESTIDO UNICO</p>
+          <p class="display-6 text-center adamina-regular text-secondary Titulo">
+            Para um sonho único, um vestido único</p>
         </div>
 
-        <div class="col bg-light p-0">
-          <video poster="./img/MiniaturaVideo.jpg" class="w-100 h-100 p-0 m-0" autoplay loop muted>
+        <div class="col bg-light p-0 d-flex flex-column">
+          <video poster="./img/MiniaturaVideo.jpg" class="p-0 m-0" autoplay loop muted>
             <source src="./Video/VideoVestido.mp4" type="video/mp4">
             Seu navegador não suporta o elemento de vídeo.
           </video>
+
+
+          <div class="p-0 bg-light" style="height: 30rem; margin-top: -17rem">
+            <!--Texto Entre Primeira Section e A Segunda - Start-->
+            <div class="col-12 bg-light d-none d-xl-flex justify-content-center flex-column align-items-center"
+              id="scrollspyHeading3">
+              <p class="display-6 mt-5">Sonho único com Renda Irlandesa</p>
+              <p class="varela-round-regular text-dark mb-5 text-center" style="font-size: 18pt; max-width: 60rem;">
+                Sonho único com Renda Irlandesa
+
+                A renda irlandesa proprociona detalhes artísticos e exclusivos para que você
+                realize o seu sonho de forma ÚNICA.
+                Uma combinação múltiplas de criatividade de pontos executados com fios de linha,
+                uma renda singular, de grande beleza, ressaltada pelo relevo e brilho do lacê.
+                Uma jornada artísticas para que sua memória possa registrar de forma INFINITA
+                o momento mais importante de sua vida.
+
+              </p>
+            </div>
+            <!--Texto Entre Primeira Section e A Segunda - End-->
+
+          </div>
+
+
         </div>
 
-
-        <div class="col bg-light p-3 d-flex justify-content-center flex-column">
-          <p class="display-6 mt-5 text-center playwrite-es-deco-Titulo text-secondary" style="font-size: 40pt;">RENDA
+        <div class="col bg-light p-3 d-flex MarginMobile justify-content-center flex-column">
+          <p class="display-6 text-center varela-round-regular text-secondary Titulo">Renda
           </p>
-          <p class="display-6 mt-5 text-center playwrite-es-deco-Titulo text-secondary " style="font-size: 40pt;">
-            IRLANDEZA</p>
+          <p class="display-6 text-center varela-round-regular text-secondary Titulo" style="margin-top: 0px;">
+            Irlandeza</p>
           <div class="text-center mb-3">
             <!-- <a class="btn btn-outline-dark border-3 rounded-0 varela-round-regular" style="font-size: 12pt;"
               href="#scrollspyHeading1">AGENDAMENTO</a> -->
@@ -239,18 +294,23 @@
         </div>
 
       </div>
-      <!--Primeira Section - End-->
 
       <!--Texto Entre Primeira Section e A Segunda - Start-->
-      <div class="col-12 bg-light d-flex justify-content-center flex-column align-items-center" id="scrollspyHeading3">
-        <p class="display-6 mt-5">Sobre</p>
+      <div class="col-12 bg-light d-flex d-xl-none justify-content-center flex-column align-items-center"
+        id="scrollspyHeading3">
+        <p class="display-6 mt-5">Sonho único com Renda Irlandesa</p>
         <p class="varela-round-regular text-dark mb-5 text-center" style="font-size: 18pt; max-width: 60rem;">
           Descubra as mais renomadas marcas internacionais de vestidos de noiva no nosso site! Nosso compromisso é
-          trazer as tendências mais elegantes da moda europeia diretamente para o Brasil, transformando o sonho de cada
+          trazer as tendências mais elegantes da moda europeia diretamente para o Brasil, transformando o sonho de
+          cada
           noiva em realidade com o vestido perfeito. Visite-nos e encontre o vestido dos seus sonhos!
         </p>
       </div>
       <!--Texto Entre Primeira Section e A Segunda - End-->
+
+      <!--Primeira Section - End-->
+
+
 
       <!--Mostruario - Start-->
       <div class="col-12 bg-light p-3" id="scrollspyHeading2">
@@ -263,10 +323,9 @@
                 <div class="">
                   <figure class="">
                     <a class="d-flex flex-column text-decoration-none" href="/">
-                      <img class="img-fluid"
-                        src="https://casamarela.com/wp-content/uploads/2024/04/20022024_CASAMARELA0624-1-768x1024.jpg" />
+                      <img class="img-fluid" src="./img/vestido1.jpeg" />
                       <figcaption class="text-center mt-0 varela-round-regular bg-dark text-light text-decoration-none">
-                        CURADORIA
+                        Encanto Primordial
                       </figcaption>
                     </a>
                   </figure>
@@ -281,10 +340,9 @@
                 <div class="">
                   <figure class="">
                     <a class="d-flex flex-column text-decoration-none" href="/">
-                      <img class="img-fluid"
-                        src="https://casamarela.com/wp-content/uploads/2024/04/20022024_CASAMARELA0624-1-768x1024.jpg" />
+                      <img class="img-fluid" src="./img/vestido2.jpeg" />
                       <figcaption class="text-center mt-0 varela-round-regular bg-dark text-light text-decoration-none">
-                        CURADORIA
+                        Elegância Sublime
                       </figcaption>
                     </a>
                   </figure>
@@ -299,10 +357,9 @@
                 <div class="">
                   <figure class="">
                     <a class="d-flex flex-column text-decoration-none" href="/">
-                      <img class="img-fluid"
-                        src="https://casamarela.com/wp-content/uploads/2024/04/20022024_CASAMARELA0624-1-768x1024.jpg" />
+                      <img class="img-fluid" src="./img/vestido3.jpeg" />
                       <figcaption class="text-center mt-0 varela-round-regular bg-dark text-light text-decoration-none">
-                        CURADORIA
+                        Serenidade Floral
                       </figcaption>
                     </a>
                   </figure>
@@ -317,10 +374,9 @@
                 <div class="">
                   <figure class="">
                     <a class="d-flex flex-column text-decoration-none" href="/">
-                      <img class="img-fluid"
-                        src="https://casamarela.com/wp-content/uploads/2024/04/20022024_CASAMARELA0624-1-768x1024.jpg" />
+                      <img class="img-fluid" src="./img/vestido4.jpeg" />
                       <figcaption class="text-center mt-0 varela-round-regular bg-dark text-light text-decoration-none">
-                        CURADORIA
+                        Aurora Dourada
                       </figcaption>
                     </a>
                   </figure>
@@ -335,61 +391,9 @@
                 <div class="">
                   <figure class="">
                     <a class="d-flex flex-column text-decoration-none" href="/">
-                      <img class="img-fluid"
-                        src="https://casamarela.com/wp-content/uploads/2024/04/20022024_CASAMARELA0624-1-768x1024.jpg" />
+                      <img class="img-fluid" src="./img/vestido5.jpeg" />
                       <figcaption class="text-center mt-0 varela-round-regular bg-dark text-light text-decoration-none">
-                        CURADORIA
-                      </figcaption>
-                    </a>
-                  </figure>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="">
-              <div class="">
-                <div class="">
-                  <figure class="">
-                    <a class="d-flex flex-column text-decoration-none" href="/">
-                      <img class="img-fluid"
-                        src="https://casamarela.com/wp-content/uploads/2024/04/20022024_CASAMARELA0624-1-768x1024.jpg" />
-                      <figcaption class="text-center mt-0 varela-round-regular bg-dark text-light text-decoration-none">
-                        CURADORIA
-                      </figcaption>
-                    </a>
-                  </figure>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="">
-              <div class="">
-                <div class="">
-                  <figure class="">
-                    <a class="d-flex flex-column text-decoration-none" href="/">
-                      <img class="img-fluid"
-                        src="https://casamarela.com/wp-content/uploads/2024/04/20022024_CASAMARELA0624-1-768x1024.jpg" />
-                      <figcaption class="text-center mt-0 varela-round-regular bg-dark text-light text-decoration-none">
-                        CURADORIA
-                      </figcaption>
-                    </a>
-                  </figure>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="">
-              <div class="">
-                <div class="">
-                  <figure class="">
-                    <a class="d-flex flex-column text-decoration-none" href="/">
-                      <img class="img-fluid"
-                        src="https://casamarela.com/wp-content/uploads/2024/04/20022024_CASAMARELA0624-1-768x1024.jpg" />
-                      <figcaption class="text-center mt-0 varela-round-regular bg-dark text-light text-decoration-none">
-                        CURADORIA
+                        Harmonia Celestial
                       </figcaption>
                     </a>
                   </figure>
@@ -402,7 +406,7 @@
       <!--Mostruario - End-->
 
       <!--Agendamento - Start-->
-      <div class="col-12 p-0 flex-column" id="scrollspyHeading1">
+      <div class="col-12 p-3 flex-column" id="scrollspyHeading1">
         <div class="col bg-dark p-0 d-flex justify-content-center align-items-center flex-column">
           <p class="display-6 mt-4 text-light text-center">Agendamento do seu <strong>Sonho</strong></p>
           <p class="display-6 text-light text-center" style="font-size: 13pt;">Faça uma consultoria com um de nosso
@@ -422,7 +426,7 @@
             </div>
 
             <div>
-              <a class="btn btn-outline-light border-3 text-light rounded-0 varela-round-regular"
+              <a class="btn btn-outline-light border-3 btnEnviar rounded-0 varela-round-regular"
                 style="font-size: 12pt;" onclick="enviarMensagemWhatsAppAtendimento()"
                 href="#scrollspyHeading1">ENVIAR</a>
             </div>
@@ -432,20 +436,10 @@
       </div>
       <!--Agendamento - End-->
 
-
-      <!--Texto Entre Segunda Section e Footer - Start-->
-      <div class="col-12 bg-light d-flex justify-content-center flex-column align-items-center" id="scrollspyHeading4">
-        <p class="display-6 mt-5">Objetivo</p>
-        <p class="varela-round-regular text-dark mb-5 text-center" style="font-size: 18pt; max-width: 60rem;">
-          Líder na seleção de marcas internacionais de vestidos de noiva, nossa missão é introduzir as últimas
-          tendências da moda europeia no Brasil, tornando realidade o sonho de cada noiva através do vestido ideal.
-        </p>
-      </div>
-      <!--Texto Entre Segunda Section e Footer - End-->
-
       <!--Footer - Start-->
       <div class="col-12 bg-light border-3 border-top border-dark p-0">
-        <p class="text-light text-center mt-4 mb-4 display-6"><img width="240" class="img-fluid text-light" src="./img/Logo.png"/></p>
+        <p class="text-light text-center display-6"><img width="240" class="img-fluid text-light"
+            src="./img/Logo.png" /></p>
       </div>
       <!--Footer - End-->
 
@@ -473,11 +467,11 @@
       document.getElementById('collapseExample').classList.remove("show")
     }
 
-    function enviarMensagemWhatsApp(numero = "5579988132044", mensagem = "Atendimento LIZAGRIFE") {
+    function enviarMensagemWhatsApp(numero = "5579988132044") {
 
       numero = numero.replace(/\D/g, '');
 
-      mensagem = encodeURIComponent(mensagem);
+      var mensagem = `Olá, iniciando a realização do seu sonho singular!`
 
       var url = `https://api.whatsapp.com/send?phone=${numero}&text=${mensagem}`;
 
@@ -490,7 +484,7 @@
       var Nome = document.getElementById('NomeCompletoInput').value
       var NumeroTelefone = document.getElementById('NumeroInput').value
 
-      var mensagem = `Olá sou ${Nome} Com Email: ${Email} é Telefone ${NumeroTelefone}, Gostaria de Fazer um Agendamento.`
+      var mensagem = `Ola, Iniciando A Realização do Seu Sonho Singular, Iremos Antendelo em Instante, ${Nome}`
 
       numero = numero.replace(/\D/g, '');
 
