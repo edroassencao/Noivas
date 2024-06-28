@@ -10,7 +10,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+ES+Deco:wght@100..400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Trad:wght@100..400&display=swap" rel="stylesheet">
   <link rel="icon" href="./img/Favicon.png" type="image/x-icon">
 </head>
 
@@ -26,8 +27,31 @@
     font-family: "Great Vibes", cursive;
     font-weight: 400;
     font-style: normal;
-    font-size: 20pt;
+    font-size: 30pt;
   }
+
+  .playwrite-es-deco-Titulo {
+    font-family: "Playwrite ES Deco", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .playwrite-us-trad-Titulo2 {
+    font-family: "Playwrite US Trad", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .playwrite-mx-Titulo3 {
+    font-family: "Playwrite MX", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
 
 
   ::-webkit-scrollbar {
@@ -50,7 +74,7 @@
     <div class="row bg-dark d-flex min-vh-100">
 
       <!--Navbar - Start-->
-      <div class="col-12 d-flex fixed-top p-0 flex-column">
+      <div class="col-12 d-flex fixed-top p-0 flex-column border-2 border-dark border-bottom">
 
         <div class="col-12 justify-content-between align-items-center p-0 bg-light flex-row d-flex"
           style="height: 10vh;">
@@ -190,14 +214,9 @@
       <!--Primeira Section - Start-->
       <div class="col-12 bg-dark p-0 d-flex flex-column flex-xl-row" style="margin-top: 10vh;" id="scrollspyHeading5">
 
-        <div class="col bg-light p-3 d-flex flex-column">
-          <p class="mt-5 p-3 text-center great-vibes-regular">Seu Sonho na Realidade Em Forma De Vestido</p>
-          <p class="display-6 text-dark text-center d-none d-xl-block" style="font-size: 13pt;">
-            Encante-se com a nossa coleção exclusiva de vestidos em bordado! Cada peça é cuidadosamente
-            trabalhada com detalhes deslumbrantes e artesanato refinado, transformando o vestido dos seus sonhos em uma
-            verdadeira obra de arte. Experimente a elegância e a sofisticação incomparáveis que só um vestido bordado
-            pode oferecer. Visite-nos e descubra como podemos tornar seu grande dia ainda mais especial!
-          </p>
+        <div class="col bg-light p-3 justify-content-center d-flex flex-column">
+          <p class=" p-3 text-center playwrite-mx-Titulo3 text-secondary" style="font-size: 40pt;">PARA UM
+            SONHO UNICO UM VESTIDO UNICO</p>
         </div>
 
         <div class="col bg-light p-0">
@@ -208,17 +227,14 @@
         </div>
 
 
-        <div class="col bg-light p-3 d-flex justify-content-start flex-column">
-          <p class="display-6 mt-5 text-center great-vibes-regular">Agendamento do seu Sonho</p>
-          <p class="display-6 text-dark text-center d-none d-xl-block" style="font-size: 13pt;">
-            Realize o agendamento do seu sonho e encontre o vestido de noiva perfeito! Marque uma visita personalizada e
-            tenha a experiência exclusiva de provar os mais deslumbrantes vestidos internacionais. Nossos especialistas
-            estão prontos para ajudar você a escolher o vestido que tornará seu grande dia inesquecível. Não perca
-            tempo, agende agora e dê o primeiro passo para o casamento dos seus sonhos!
+        <div class="col bg-light p-3 d-flex justify-content-center flex-column">
+          <p class="display-6 mt-5 text-center playwrite-es-deco-Titulo text-secondary" style="font-size: 40pt;">RENDA
           </p>
+          <p class="display-6 mt-5 text-center playwrite-es-deco-Titulo text-secondary " style="font-size: 40pt;">
+            IRLANDEZA</p>
           <div class="text-center mb-3">
-            <a class="btn btn-outline-dark border-3 rounded-0 varela-round-regular" style="font-size: 12pt;"
-              href="#scrollspyHeading1">AGENDAMENTO</a>
+            <!-- <a class="btn btn-outline-dark border-3 rounded-0 varela-round-regular" style="font-size: 12pt;"
+              href="#scrollspyHeading1">AGENDAMENTO</a> -->
           </div>
         </div>
 
@@ -407,7 +423,8 @@
 
             <div>
               <a class="btn btn-outline-light border-3 text-light rounded-0 varela-round-regular"
-                style="font-size: 12pt;" onclick="enviarMensagemWhatsAppAtendimento()" href="#scrollspyHeading1">ENVIAR</a>
+                style="font-size: 12pt;" onclick="enviarMensagemWhatsAppAtendimento()"
+                href="#scrollspyHeading1">ENVIAR</a>
             </div>
 
           </div>
@@ -427,8 +444,8 @@
       <!--Texto Entre Segunda Section e Footer - End-->
 
       <!--Footer - Start-->
-      <div class="col-12 bg-dark p-0">
-        <p class="text-light text-center mt-4 mb-4 display-6">Desenvolvimento: Senai</p>
+      <div class="col-12 bg-light border-3 border-top border-dark p-0">
+        <p class="text-light text-center mt-4 mb-4 display-6"><img width="240" class="img-fluid text-light" src="./img/Logo.png"/></p>
       </div>
       <!--Footer - End-->
 
@@ -446,39 +463,41 @@
     </div>
     <!--Whatsapp Icon - End-->
   </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+
   <script>
     function closeCollapse() {
       document.getElementById('collapseExample').classList.remove("show")
     }
 
-    function enviarMensagemWhatsApp(numero="5579988132044", mensagem="Atendimento LIZAGRIFE") {
-      
+    function enviarMensagemWhatsApp(numero = "5579988132044", mensagem = "Atendimento LIZAGRIFE") {
+
       numero = numero.replace(/\D/g, '');
-      
+
       mensagem = encodeURIComponent(mensagem);
-      
+
       var url = `https://api.whatsapp.com/send?phone=${numero}&text=${mensagem}`;
-      
+
       window.location.href = url;
     }
 
-    function enviarMensagemWhatsAppAtendimento(numero="5579988132044") {
-      
+    function enviarMensagemWhatsAppAtendimento(numero = "5579988132044") {
+
       var Email = document.getElementById('EmailInput').value
       var Nome = document.getElementById('NomeCompletoInput').value
       var NumeroTelefone = document.getElementById('NumeroInput').value
 
-      var mensagem=`Olá sou ${Nome} Com Email: ${Email} é Telefone ${NumeroTelefone}, Gostaria de Fazer um Agendamento.`
+      var mensagem = `Olá sou ${Nome} Com Email: ${Email} é Telefone ${NumeroTelefone}, Gostaria de Fazer um Agendamento.`
 
       numero = numero.replace(/\D/g, '');
-      
+
       mensagem = encodeURIComponent(mensagem);
-      
+
       var url = `https://api.whatsapp.com/send?phone=${numero}&text=${mensagem}`;
-      
+
       window.location.href = url;
     }
   </script>
